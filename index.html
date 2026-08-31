@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Talal Copypasta</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="brand"><div class="logo">🍝</div><div><b>Talal Copypasta</b><small>make your text unreasonably chaotic</small></div></div>
+  <button id="theme">☾</button>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="pill">🔥 100% FREE • NO SIGN-UP • COPYPASTA</div>
+    <h1>Say something.<br><span>Make it cursed.</span></h1>
+    <p>Put in normal text and turn it into an overdramatic, emoji-loaded copypasta.</p>
+  </section>
+
+  <section class="app">
+    <div class="box">
+      <div class="head"><div><h2>Your text</h2><p>Anything you want to transform.</p></div><button class="clear" id="clear">Clear</button></div>
+      <textarea id="input" maxlength="3000" placeholder="bro why are you doing this..."></textarea>
+      <div class="row"><span id="count">0 / 3000</span><button class="generate" id="generate">Generate 🍝</button></div>
+
+      <div class="controls">
+        <label>Style
+          <select id="style">
+            <option value="chaotic">💀 Chaotic</option>
+            <option value="brainrot">🧠 Brainrot</option>
+            <option value="dramatic">🎭 Dramatic</option>
+            <option value="flirty">😏 Flirty / suggestive</option>
+            <option value="insult">😭 Friendly roast</option>
+            <option value="npc">🤖 NPC meltdown</option>
+          </select>
+        </label>
+        <label>Emoji level
+          <input id="emoji" type="range" min="0" max="5" value="3">
+          <span class="range-label" id="emojiLabel">Medium</span>
+        </label>
+        <label>Intensity
+          <select id="intensity">
+            <option value="light">Light</option>
+            <option value="medium" selected>Medium</option>
+            <option value="max">MAXIMUM</option>
+          </select>
+        </label>
+      </div>
+    </div>
+
+    <div class="box output-box">
+      <div class="head"><div><h2>Result</h2><p>Your freshly cooked copypasta.</p></div><span class="live">● LIVE</span></div>
+      <div class="result" id="result">Your masterpiece will appear here... 👀</div>
+      <div class="actions">
+        <button id="copy">📋 Copy</button>
+        <button id="random">🎲 Randomize</button>
+        <button class="primary" id="save">💾 Save</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="presets">
+    <div class="section-head"><div><h2>Quick presets</h2><p>Click one to instantly cook your text.</p></div></div>
+    <div class="preset-grid">
+      <button data-style="chaotic"><strong>💀 Chaos</strong><small>maximum nonsense</small></button>
+      <button data-style="brainrot"><strong>🧠 Brainrot</strong><small>internet energy</small></button>
+      <button data-style="dramatic"><strong>🎭 Dramatic</strong><small>make it serious</small></button>
+      <button data-style="flirty"><strong>😏 Flirty</strong><small>playful & suggestive</small></button>
+      <button data-style="insult"><strong>🔥 Roast</strong><small>friendly disrespect</small></button>
+      <button data-style="npc"><strong>🤖 NPC</strong><small>system failure</small></button>
+    </div>
+  </section>
+
+  <section class="history">
+    <div class="section-head"><div><h2>Recent</h2><p>Saved locally in your browser.</p></div><button class="clear" id="clearHistory">Clear</button></div>
+    <div id="history" class="history-list"><div class="empty">No saved copypastas yet.</div></div>
+  </section>
+</main>
+<footer>🍝 Talal Copypasta · 100% Free · No Sign-Up · Made for maximum chaos</footer>
+<div id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
